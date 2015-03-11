@@ -13,7 +13,6 @@
     "gulp": "~3.8.11",
     "gulp-changed": "~1.2.1",
     "gulp-size": "~1.2.1",
-    "gulp-sourcemaps": "~1.4.0",
     "gulp-stylus": "~2.0.1",
     "nib": "~1.1.0",
     "require-dir": "~0.1.0"

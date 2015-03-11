@@ -1,9 +1,6 @@
-var path = require('path');
-
 var config = {
   clean: [
-    './dist/*.css',
-    './dist/*.css.map',
+    './dist/*.css'
   ],
   css: {
     stylus: {
@@ -14,11 +11,6 @@ var config = {
         compress: true,
         errors: true,
         import: ['nib']
-      },
-      sourcemap_opts: {
-        inline: true,
-        sourceRoot: '../../',
-        basePath: path.resolve('.')
       }
     },
     dest: './dist/'
