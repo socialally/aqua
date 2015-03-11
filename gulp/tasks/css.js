@@ -8,9 +8,9 @@ var gulp = require('gulp')
 
 gulp.task('css', function() {
   return gulp.src(config.stylus.src)
-    .pipe(size({title:'css'}))
     .pipe(changed(config.dest))
     .pipe(styl(opts()))
+    .pipe(size({title:'css'}))
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.dest));
