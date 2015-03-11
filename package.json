@@ -1,0 +1,51 @@
+{
+  "name": "aqua-css",
+  "version": "0.1.0",
+  "description": "Stylus stylesheet library",
+  "author": "muji <noop@xpm.io>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/socialally/aqua.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "del": "~1.1.1",
+    "gulp": "~3.8.11",
+    "gulp-changed": "~1.2.1",
+    "gulp-size": "~1.2.1",
+    "gulp-sourcemaps": "~1.4.0",
+    "gulp-stylus": "~2.0.1",
+    "gulp-util": "~3.0.4",
+    "nib": "~1.1.0",
+    "require-dir": "~0.1.0",
+    "run-sequence": "~1.0.2"
+  },
+  "engine": [
+    "node >= 0.10.11"
+  ],
+  "scripts": {
+    "clean": "gulp clean",
+    "css": "gulp css",
+    "docs": "npm run readme",
+    "readme": "mdp --force -v"
+  },
+  "mdp": {
+    "title": "Aqua",
+    "pedantic": true,
+    "include": "doc/readme",
+    "require": "lib",
+    "links": "links.md",
+    "toc": "Table of Contents",
+    "base": "https://github.com/socialally/aqua",
+    "partial": [
+      {
+        "inc": [
+          "introduction.md",
+          "install.md",
+          "developer.md",
+          "license.md"
+        ]
+      }
+    ]
+  }
+}

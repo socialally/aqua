@@ -1,0 +1,6 @@
+/dist
+/gulp
+/doc
+*.log
+*.bak
+*.tgz
