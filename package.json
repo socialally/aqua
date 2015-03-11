@@ -15,10 +15,8 @@
     "gulp-size": "~1.2.1",
     "gulp-sourcemaps": "~1.4.0",
     "gulp-stylus": "~2.0.1",
-    "gulp-util": "~3.0.4",
     "nib": "~1.1.0",
-    "require-dir": "~0.1.0",
-    "run-sequence": "~1.0.2"
+    "require-dir": "~0.1.0"
   },
   "engine": [
     "node >= 0.10.11"
