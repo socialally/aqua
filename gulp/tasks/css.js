@@ -11,16 +11,16 @@ gulp.task('css', function() {
     .pipe(changed(config.dest))
     .pipe(styl(opts()))
     .pipe(size({title:'css'}))
-    .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(sourcemaps.write('.'))
+    //.pipe(sourcemaps.init({loadMaps: true}))
+    //.pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.dest));
 })
 
 function opts() {
   var opts = config.stylus.opts;
   opts.use = [nib()];
-  if(process.env.NODE_ENV !== 'production') {
-    opts.sourcemap = config.stylus.sourcemap_opts;
-  }
+  //if(process.env.NODE_ENV !== 'production') {
+    //opts.sourcemap = config.stylus.sourcemap_opts;
+  //}
   return opts;
 }
