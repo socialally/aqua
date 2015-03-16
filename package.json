@@ -7,7 +7,9 @@
     "type": "git",
     "url": "git://github.com/socialally/aqua.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "kouto-swiss": "~0.11.9"
+  },
   "devDependencies": {
     "del": "~1.1.1",
     "grunt": "~0.4.5",
