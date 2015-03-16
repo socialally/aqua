@@ -2,7 +2,7 @@ var gulp = require('gulp')
   , config = require('../config').css
   , size = require('gulp-size')
   , styl = require('gulp-stylus')
-  , nib = require('nib');
+  , swiss = require('kouto-swiss');
 
 gulp.task('css', function() {
   return gulp.src(config.stylus.src)
@@ -13,6 +13,6 @@ gulp.task('css', function() {
 
 function opts() {
   var opts = config.stylus.opts;
-  opts.use = [nib()];
+  opts.use = [swiss()];
   return opts;
 }

@@ -8,9 +8,9 @@ var config = {
         './lib/aqua.styl'
       ],
       opts: {
-        compress: true,
+        compress: false,
         errors: true,
-        import: ['nib']
+        //import: ['nib']
       }
     },
     dest: './dist/'
