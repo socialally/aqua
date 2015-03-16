@@ -16,7 +16,7 @@
     "gulp": "~3.8.11",
     "gulp-size": "~1.2.1",
     "gulp-stylus": "~2.0.1",
-    "kouto-swiss": "~0.11.8",
+    "kouto-swiss": "~0.11.9",
     "require-dir": "~0.1.0"
   },
   "engine": [
