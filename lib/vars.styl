@@ -109,10 +109,18 @@ $pre-fs                 := 2rem;
 $kbd-ff                 := monospace;
 $kbd-fs                 := 2rem;
 
-/* ELEMENT BLOCK STYLES - NOTE: CANNOT USE $ */
+/* ELEMENT BLOCK STYLES */
+
+// NOTE: 1. Block declarations must not use the variable prefix: $
+// NOTE: 2. Many blocks are placeholders that allow *extending* built-in
+// NOTE: declarations, eg: a-block to extend the default anchor styles.
+// NOTE: To customise the default styles for an element use the variables section.
+
+// a[href]
+a-block = {}
 
 // a[href]:hover
-a-hover =
+a-hover-block =
   border-bottom         : 1px dotted
   border-color          : $cyan
   color                 : $cyan
