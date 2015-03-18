@@ -99,11 +99,26 @@ $kbd-fs                 := 2rem;
 
 // NOTE: 1. Block declarations must not use the variable prefix: $
 // NOTE: 2. Many blocks are placeholders that allow *extending* built-in
-// NOTE: declarations, eg: a-block to extend the default anchor styles.
-// NOTE: To customise the default styles for an element use the variables section.
+// NOTE:    declarations, eg: a-block to extend the default anchor styles.
+// NOTE:    To customise the default styles for an element use the variables section.
+
+// html
+html-block              := {}
+
+// body
+body-block              := {}
+
+// h1-h6
+h-block                 := {}
+h1-block                := {}
+h2-block                := {}
+h3-block                := {}
+h4-block                := {}
+h5-block                := {}
+h6-block                := {}
 
 // a[href]
-a-block := {}
+a-block                 := {}
 
 // a[href]:hover
 a-hover-block := {
@@ -112,16 +127,22 @@ a-hover-block := {
   color                 : $cyan
 }
 
+// code
+code-block              := {}
+
 // pre
-pre-block := {}
+pre-block               := {}
 
 // em
 em-block := {
   font-style            : italic
 }
 
+// del
+del-block               := {}
+
 // strong
-strong-block := {}
+strong-block            := {}
 
 // b
-b-block := {}
+b-block                 := {}
