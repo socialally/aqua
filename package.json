@@ -15,6 +15,7 @@
     "grunt": "~0.4.5",
     "gulp": "~3.8.11",
     "gulp-size": "~1.2.1",
+    "gulp-stylint": "git://github.com/socialally/gulp-stylint",
     "gulp-stylus": "~2.0.1",
     "kouto-swiss": "~0.11.9",
     "require-dir": "~0.1.0"

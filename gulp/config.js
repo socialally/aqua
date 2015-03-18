@@ -11,6 +11,10 @@ var config = {
         compress: false,
         errors: true,
         //import: ['nib']
+      },
+      lint: {
+        config: './stylintrc',
+        src: './lib'
       }
     },
     dest: './dist/'
