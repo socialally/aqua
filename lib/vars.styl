@@ -47,10 +47,23 @@ $inverse-color          := $base2;
 
 /* ELEMENT VARIABLES */
 
+// <html>
+$html-bs                := border-box;
+
+// html is set to 62.5% so that all the REM measurements 
+// are based on 10px sizing. So basically 1.5rem = 15px
+$html-fs                := 62.5%;
+
+// *, *:before, *:after
+$wildcard-bs            := inherit;
+
 // <body>
 $body-bg-color          := $base03;
 $body-fg-color          := $normal-color;
 $body-ff                := sans-serif;
+// currently ems cause chrome bug misinterpreting rems on body element
+$body-fs                := 1.5em;
+$body-lh                := 1.6;
 
 // <h1> - <h6>
 $heading-color          := $base2;

@@ -1,13 +1,9 @@
-/*
-  html is set to 62.5% so that all the REM measurements 
-  are based on 10px sizing. So basically 1.5rem = 15px :)
-*/
 html
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-  font-size: 62.5%;
+  box-sizing: $html-bs;
+  font-size: $html-fs;
 
 // @stylint off
 *, *:before, *:after
-  box-sizing: inherit;
+  box-sizing: $wildcard-bs;
