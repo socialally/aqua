@@ -33,11 +33,8 @@ $dark-color             := $base03;
 // named color variants
 $muted-color            := $base01;
 $primary-color          := $blue;
-$info-color             := $cyan;
-$note-color             := $violet;
-$tip-color              := $yellow;
 $warn-color             := $orange;
-$danger-color           := $red;
+$error-color            := $red;
 $success-color          := $green;
 
 // should be opposite contrast to the default color
@@ -125,17 +122,24 @@ h6-block                := {}
 
 // button
 button-block            := {
-  border                : none
+  border                : 0
   background            : transparent
+  padding               : 0
+  -webkit-appearance    : none
 }
 
 // a[href]
 a-block                 := {}
 
 // a[href]:hover
-a-hover-block := {
+a-hover-block           := {
   color                 : $cyan
   text-decoration       : underline
+}
+
+a-id-block              := {
+  color                 : inherit
+  text-decoration       : inherit
 }
 
 // p
@@ -168,13 +172,26 @@ b-block                 := {}
 
 // .c-btn
 btn-block               := {
-  font-size             : 1.6rem
-  border-radius         : 0
-  background            : $base02
-  padding               : .2em
-  color                 : white
+  background            : $base01
+  padding               : .4rem
+  color                 : $base3
+  line-height           : normal
+  border-radius         : 2px
 }
 
-btn-hover-block         := {
-  text-decoration       : none
+btn-primary-block       := {
+  background            : $primary-color
+}
+
+btn-success-block       := {
+  background            : $success-color
+}
+
+btn-warn-block       := {
+  background            : $warn-color
+}
+
+
+btn-error-block       := {
+  background            : $error-color
 }

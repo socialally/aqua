@@ -1,9 +1,12 @@
-a[href], a[href]:visited, a[href]:hover, a[href]:active
+a, a:visited, a:hover, a:active
   cursor: $a-cursor;
   color: $a-fg-color;
   font-weight: $a-fw;
   text-decoration: $a-td;
   {a-block}
 
-a[href]:hover
+a:hover
   {a-hover-block}
+
+a[id]
+  {a-id-block}
