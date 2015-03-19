@@ -201,6 +201,7 @@ btn-error-block         := {
 
 // .c-msg
 msg-block               := {
+  background            : monochrome($base02)[1]
   padding               : .3rem
   color                 : $base3
   padding               : 1rem
@@ -238,11 +239,12 @@ nav-item-block          := {
    float                : left
 }
 
-// .c-dd-toggle, .c-dd, .c-dd-item
-dropdown-toggle-block   := {}
-
+// .c-dd, .c-dd-toggle, .c-dd-list, .c-dd-item
 dropdown-block          := {}
-
+dropdown-toggle-block   := {}
+dropdown-list-block     := {
+  display               : none
+}
 dropdown-item-block     := {
   display               : block !important
 }
