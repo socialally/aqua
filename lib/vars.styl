@@ -155,7 +155,7 @@ inine-code-block        := {}
 pre-block               := {}
 
 // em
-em-block := {
+em-block                := {
   font-style            : italic
 }
 
@@ -173,10 +173,14 @@ b-block                 := {}
 // .c-btn
 btn-block               := {
   background            : $base01
-  padding               : .4rem
+  padding               : .3rem
   color                 : $base3
   line-height           : normal
   border-radius         : 2px
+}
+
+btn-hover-block         := {
+  text-decoration       : none
 }
 
 btn-primary-block       := {
@@ -191,7 +195,35 @@ btn-warn-block       := {
   background            : $warn-color
 }
 
-
 btn-error-block       := {
+  background            : $error-color
+}
+
+// .c-msg
+msg-block               := {
+  padding               : .3rem
+  color                 : $base3
+  padding               : 1rem
+  line-height           : normal
+  border-radius         : 2px
+}
+
+msg-hover-block         := {
+  text-decoration       : none
+}
+
+msg-primary-block       := {
+  background            : $primary-color
+}
+
+msg-success-block       := {
+  background            : $success-color
+}
+
+msg-warn-block       := {
+  background            : $warn-color
+}
+
+msg-error-block       := {
   background            : $error-color
 }
