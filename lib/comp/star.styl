@@ -1,0 +1,38 @@
+$c-star-bg = $magenta;
+$c-star-fg = $white;
+$c-star-size = 3rem;
+
+.c-star
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  right: -1.5rem;
+  top: -1.5rem;
+  background: $c-star-bg;
+  color: $c-star-fg;
+  width: $c-star-size;
+  height: $c-star-size;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: .1rem;
+  user-select: none;
+  opacity: 0;
+  &:before, &:after
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    width: 3rem;
+    background: $c-star-bg;
+    z-index: -1;
+  &:before
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+  &:after
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
