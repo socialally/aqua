@@ -1,0 +1,49 @@
+// poll block
+$b-size = 3rem;
+$b-percent-width = 12%;
+$b-space = .5rem;
+
+.b-poll
+  padding: 1rem;
+  background: $base02;
+  margin-bottom: 2rem;
+  color: $base3;
+
+.b-option
+  background: $base03;
+  padding: .5rem;
+  position: relative;
+
+.b-opt
+  position: relative;
+  font-size: 2.5rem;
+  line-height: $b-size;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  .c-bg
+    position: absolute;
+    display: block;
+    background: darken($blue, 40%);
+    min-height: $b-size;
+    width: 100%;
+  .c-progress
+    position: absolute;
+    background: $blue;
+    line-height: $b-size;
+    left: $b-percent-width;
+    width: 0;
+  .c-lbl
+    position: relative;
+    top: .2rem;
+    padding: .5rem;
+    left: $b-percent-width;
+  .c-percent
+    position: absolute;
+    text-align: center;
+    background: $violet;
+    width: $b-percent-width;
+    font-size: 1.3rem;
+
+.b-option:not(:last-child)
+  margin: 0 0 1rem 0;
