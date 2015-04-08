@@ -47,6 +47,9 @@ $b-space = .5rem;
     background: $violet;
     width: $b-percent-width;
     font-size: 1.3rem;
+  .c-percent[hidden] + .c-progress,
+  .c-percent[hidden] + .c-progress + .c-lbl
+    left: 0;
 
 .b-option:not(:last-child)
   margin: 0 0 1rem 0;
