@@ -2,28 +2,47 @@
 $b-size = 3rem;
 $b-percent-width = 12%;
 $b-space = .5rem;
+$b-poll-bg = $base02;
+$b-poll-fg = $base3;
+$b-poll-padding = 1rem;
 
 .b-poll
-  padding: 1rem;
-  background: $base02;
+.b-poll-summary
+  padding: $b-poll-padding;
+  background: $b-poll-bg;
+  color: $b-poll-fg;
   margin-bottom: 2rem;
-  color: $base3;
 
-.b-option
-  background: $base03;
-  padding: .5rem;
+.b-poll
+  .b-opt
+    cursor: pointer;
+    font-size: 2.5rem;
+    user-select: none;
+  .b-option
+    padding: .5rem;
+    &:hover
+    &.s-selected
+      background: lighten($blue, 60%);
+    .c-percent
+      background: $violet;
+
+.c-index
   position: relative;
-  &:hover
-  &.s-selected
-    background: lighten($blue, 60%);
+  display: inline-block;
+  background: $green;
+  color: $b-poll-fg;
+  line-height: $b-size;
+  text-align: center;
+  width: 8%;
+
+.c-index + .b-option
+  display: inline-block;
+  width: 92%;
 
 .b-opt
   position: relative;
-  font-size: 2.5rem;
   line-height: $b-size;
   display: block;
-  cursor: pointer;
-  user-select: none;
   .c-bg
     position: absolute;
     display: block;
@@ -44,7 +63,6 @@ $b-space = .5rem;
   .c-percent
     position: absolute;
     text-align: center;
-    background: $violet;
     width: $b-percent-width;
     font-size: 1.3rem;
   .c-percent[hidden] + .c-progress,
