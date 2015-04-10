@@ -24,8 +24,6 @@ $b-poll-padding = 1rem;
     &:hover
     &.s-selected
       background: lighten($blue, 60%);
-    .c-percent
-      background: $violet;
 
 .c-index
   position: relative;
@@ -63,6 +61,7 @@ $b-poll-padding = 1rem;
     left: $b-percent-width;
   .c-percent
     position: absolute;
+    background: $violet;
     text-align: center;
     width: $b-percent-width;
     font-size: 1.3rem;
@@ -72,3 +71,10 @@ $b-poll-padding = 1rem;
 
 .b-option:not(:last-child)
   margin: 0 0 1rem 0;
+
+.right
+  .c-progress
+  .c-lbl
+    left: 0;
+  .c-percent
+    right: 0;
