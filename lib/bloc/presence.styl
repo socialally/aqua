@@ -5,10 +5,14 @@ $b-presence-lh            := 1.5rem;
 $b-presence-br            := 2px;
 $b-presence-padding       := .5rem;
 
+presence-block            := {
+  background              : $b-presence-bg
+  color                   : $b-presence-fg
+  font-size               : $b-presence-fs
+  line-height             : $b-presence-lh
+  border-radius           : $b-presence-br
+  padding                 : $b-presence-padding
+}
+
 .b-presence
-  background: $b-presence-bg;
-  color: $b-presence-fg;
-  font-size: $b-presence-fs;
-  line-height: $b-presence-lh;
-  border-radius: $b-presence-br;
-  padding: $b-presence-padding;
+  {presence-block}
