@@ -1,6 +1,14 @@
+s-pointer-disabled-block    := {
+  pointer-events            : none
+}
+
+s-disabled-block            := {
+  opacity                   : .6
+}
+
 .s-pointer-disabled
-  pointer-events: none;
+  {s-pointer-disabled-block}
 
 .s-disabled
   @extend .s-pointer-disabled;
-  opacity: .6;
+  {s-disabled-block}
