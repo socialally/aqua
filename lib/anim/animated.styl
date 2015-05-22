@@ -1,16 +1,25 @@
-.animated {
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+animated-block                      := {
+  -webkit-animation-duration        : .5s
+  animation-duration                : .5s
+  -webkit-animation-fill-mode       : both
+  animation-fill-mode               : both
 }
 
-.animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+animated-infinite-block             := {
+  -webkit-animation-iteration-count : infinite
+  animation-iteration-count         : infinite
 }
 
-.animated.hinge {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+animated-hinge-block                := {
+  -webkit-animation-duration        : 1s
+  animation-duration                : 1s
 }
+
+.animated
+  {animated-block}
+
+.animated.infinite
+  {animated-infinite-block}
+
+.animated.hinge
+  {animated-hinge-block}
