@@ -6,13 +6,16 @@ $b-poll-bg = $base02;
 $b-poll-fg = $base3;
 $b-poll-padding = 1rem;
 
-.b-poll
-.b-poll-summary
+$poll {
   position: relative;
   padding: $b-poll-padding;
   background: $b-poll-bg;
   color: $b-poll-fg;
   margin-bottom: 2rem;
+}
+
+.b-poll
+  @extend $poll
   .b-opt
     cursor: pointer;
     user-select: none;
@@ -22,7 +25,8 @@ $b-poll-padding = 1rem;
     &.s-selected
       background: lighten($blue, 60%);
 
-// .b-poll
+.b-poll-summary
+  @extend $poll
 
 .c-index
   position: relative;
