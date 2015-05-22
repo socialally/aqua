@@ -1,5 +1,13 @@
+u-opaque-block            := {
+  opacity                 : 1
+  }
+
+u-transparent-block       := {
+  opacity                 : 0
+}
+
 .u-opaque
-  opacity: 1;
+  {u-opaque-block}
 
 .u-transparent
-  opacity: 0;
+  {u-transparent-block}
