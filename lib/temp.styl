@@ -1,28 +1,54 @@
+// template blocks
+
+template-body-block     := {
+  text-align            : center
+}
+
+template-main-block     := {
+  display               : inline-block
+  padding               : 2rem 1.5rem
+  text-align            : left
+  max-width             : 738px
+}
+
+template-h1-block       := {
+  display               : inline-block
+}
+
+template-p-block        := {
+  font-size             : 2.4rem
+  line-height           : 3rem
+  margin-bottom         : 2rem
+}
+
+template-small-block    := {
+  margin-bottom         : 2rem
+  display               : block
+  font-size             : 100%
+}
+
+template-logo-block     := {
+  background            : url('../img/logo.png') transparent no-repeat
+  width                 : 290px
+  height                : 129px
+  margin                : 0 0 3rem 0
+}
+
 // template styles
 body
-  text-align: center;
+  {template-body-block}
 
 main
-  display: inline-block;
-  padding: 2rem 1.5rem;
-  text-align: left;
-  max-width: 738px;
+  {template-main-block}
 
 h1
-  display: inline-block;
+  {template-h1-block}
 
 p:not(.browser-warning)
-  font-size: 2.4rem;
-  line-height: 3rem;
-  margin-bottom: 2rem;
+  {template-p-block}
 
 small
-  margin-bottom: 2rem;
-  display: block;
-  font-size: 100%;
+  {template-small-block}
 
 .logo
-  background: url('../img/logo.png') transparent no-repeat;
-  width: 290px;
-  height: 129px;
-  margin: 0 0 3rem 0;
+  {template-logo-block}
