@@ -8,8 +8,11 @@ u-pr-block            := {
   float               : right !important
 }
 
-.u-cf
+$clearfix
   clearfix();
+
+.u-cf
+  @extends $clearfix;
 
 .u-pl
   {u-pl-block}
