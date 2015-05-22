@@ -1,10 +1,18 @@
 @import "kouto-swiss";
 
+u-pl-block            := {
+  float               : left
+}
+
+u-pr-block            := {
+  float               : right !important
+}
+
 .u-cf
   clearfix();
 
 .u-pl
-  float: left;
+  {u-pl-block}
 
 .u-pr
-  float: right !important;
+  {u-pr-block}
