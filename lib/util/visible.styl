@@ -1,5 +1,13 @@
+u-visible-block       := {
+  visibility          : visible !important
+  }
+
+u-hidden-block        := {
+  visibility          : hidden
+}
+
 .u-visible
-  visibility: visible !important;
+  {u-visible-block}
 
 .u-hidden
-  visibility: hidden;
+  {u-hidden-block}
