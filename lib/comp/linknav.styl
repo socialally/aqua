@@ -1,6 +1,21 @@
+// vars
+$c-linknav-display              := inline-block;
+$c-linknav-child-margin         := 0 1rem 0 0;
+
+// blocks
+c-linknav-block                 := {
+  display                       : $c-linknav-display
+}
+
+c-linknav-child-block           := {
+  margin                        : $c-linknav-child-margin
+}
+
+// rules
+
 // @stylint off
 .c-linknav > *
 // @stylint on
-  display: inline-block;
+  {c-linknav-block}
   &:not(:last-child)
-    margin-right: 1rem;
+    {c-linknav-child-block}
