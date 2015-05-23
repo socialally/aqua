@@ -1,11 +1,12 @@
-// poll block
-$b-size = 3rem;
-$b-percent-width = 12%;
-$b-space = .5rem;
-$b-poll-bg = $base02;
-$b-poll-fg = $base3;
-$b-poll-padding = 1rem;
+// vars
+$b-size                         := 3rem;
+$b-percent-width                := 12%;
+$b-space                        := .5rem;
+$b-poll-bg                      := $base02;
+$b-poll-fg                      := $base3;
+$b-poll-padding                 := 1rem;
 
+// placeholders
 $poll {
   position                      : relative;
   padding                       : $b-poll-padding;
@@ -14,6 +15,9 @@ $poll {
   margin-bottom                 : 2rem;
 }
 
+// blocks
+
+// rules
 .b-poll
   @extend $poll
   .b-opt
