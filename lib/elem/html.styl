@@ -1,11 +1,27 @@
+$html-bs                    := border-box;
+
+// html is set to 62.5% so that all the REM measurements 
+// are based on 10px sizing. So basically 1.5rem = 15px
+$html-fs                    := 62.5%;
+$html-wildcard-box-sizing   := inherit;
+
+// blocks
+html-block                  := {
+  -webkit-font-smoothing    : antialiased
+  // -moz-osx-font-smoothing   : grayscale
+  box-sizing                : $html-bs
+  font-size                 : $html-fs
+}
+
+html-wildcard-box-block     := {
+  box-sizing                : $html-wildcard-box-sizing
+}
+
+// rules
 html
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: $html-bs;
-  font-size: $html-fs;
   {html-block}
 
 // @stylint off
 *, *:before, *:after
 // @stylint on
-  box-sizing: $wildcard-bs;
+  {html-wildcard-box-block}

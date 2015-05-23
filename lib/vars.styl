@@ -48,16 +48,6 @@ $code-font              := monospace;
 
 /* ELEMENT VARIABLES */
 
-// <html>
-$html-bs                := border-box;
-
-// html is set to 62.5% so that all the REM measurements 
-// are based on 10px sizing. So basically 1.5rem = 15px
-$html-fs                := 62.5%;
-
-// *, *:before, *:after
-$wildcard-bs            := inherit;
-
 // <p>
 $p-mt                   := 0;
 
@@ -75,9 +65,6 @@ $kbd-fs                 := 2rem;
 // NOTE: 2. Many blocks are placeholders that allow *extending* built-in
 // NOTE:    declarations, eg: a-block to extend the default anchor styles.
 // NOTE:    To customise the default styles for an element use the variables section.
-
-// html
-html-block              := {}
 
 // p
 p-block                 := {}
@@ -119,12 +106,3 @@ btn-error-block         := {
   background            : $error-color
 }
 
-// .c-dd, .c-dd-toggle, .c-dd-list, .c-dd-item
-dropdown-block          := {}
-dropdown-toggle-block   := {}
-dropdown-list-block     := {
-  display               : none
-}
-dropdown-item-block     := {
-  display               : block !important
-}
