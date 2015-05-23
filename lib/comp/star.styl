@@ -5,7 +5,6 @@ $c-star-size                      := 3rem;
 
 // blocks
 star-block                        := {
-  position                        : absolute
   display                         : inline-block
   z-index                         : 1
   right                           : -1.5rem
@@ -22,7 +21,6 @@ star-block                        := {
 
 star-before-after-block           := {
   content                         : ''
-  position                        : absolute
   top                             : 0
   left                            : 0
   height                          : 3rem
@@ -32,25 +30,19 @@ star-before-after-block           := {
 }
 
 star-before-block                 := {
-  -webkit-transform               : rotate(30deg)
-  -moz-transform                  : rotate(30deg)
-  -ms-transform                   : rotate(30deg)
-  -o-transform                    : rotate(30deg)
   transform                       : rotate(30deg)
 }
 
 star-after-block                  := {
-  -webkit-transform               : rotate(60deg)
-  -moz-transform                  : rotate(60deg)
-  -ms-transform                   : rotate(60deg)
-  -o-transform                    : rotate(60deg)
   transform                       : rotate(60deg)
 }
 
 // rules
 .c-star
+  position                        : absolute
   {star-block}
   &:before, &:after
+    position                      : absolute
     {star-before-after-block}
   &:before
     {star-before-block}
