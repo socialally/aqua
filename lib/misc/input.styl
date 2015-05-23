@@ -1,8 +1,20 @@
+// vars
+
+// blocks
+misc-tap-block                        := {
+  -webkit-tap-highlight-color         : rgba(0, 0, 0, 0)
+}
+
+misc-input-block                      := {
+  -webkit-appearance                  : none
+  -webkit-border-radius               : 0
+  border-radius                       : 0
+  outline                             : none
+}
+
+// rules
 a, input, label
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  {misc-tap-block}
 
 input
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  outline: none;
+  {misc-input-block}
