@@ -1,8 +1,28 @@
+// vars
+$a-cursor               := pointer;
+$a-fg-color             := $primary-color;
+$a-fw                   := inherit;
+$a-td                   := none;
+
+// blocks
+a-block                 := {
+  cursor                : $a-cursor
+  color                 : $a-fg-color
+  font-weight           : $a-fw
+  text-decoration       : $a-td
+}
+
+a-hover-block           := {
+  color                 : $cyan
+  text-decoration       : underline
+}
+
+a-id-block              := {
+  color                 : inherit
+  text-decoration       : inherit
+}
+
 a, a:visited, a:hover, a:active
-  cursor: $a-cursor;
-  color: $a-fg-color;
-  font-weight: $a-fw;
-  text-decoration: $a-td;
   {a-block}
 
 a:hover
