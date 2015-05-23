@@ -1,7 +1,16 @@
+// vars
+$pre-ff                 := $code-font;
+$pre-fs                 := 2rem;
+
+// blocks
+pre-block               := {
+  font-family           : $pre-ff
+  font-size             : $pre-fs
+  white-space           : pre-wrap
+  word-break            : break-all
+  word-wrap             : break-word
+}
+
+// rules
 pre
-  font-family: $pre-ff;
-  font-size: $pre-fs;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
   {pre-block}
