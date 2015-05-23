@@ -1,14 +1,15 @@
 // vars
+$nav-last-child-margin-right    := 0;
 
 // blocks
-nav-block               := {
-  margin-bottom         : 1em
+nav-block                       := {
+  margin-bottom                 : 1em
 }
 
-nav-item-block          := {
-   display              : inline-block
-   margin               : 0 1em 0 0
-   float                : left
+nav-item-block                  := {
+   display                      : inline-block
+   margin                       : 0 1em 0 0
+   float                        : left
 }
 
 // rules
@@ -18,4 +19,4 @@ nav-item-block          := {
   .c-nav-item
     {nav-item-block}
     &:last-child
-      margin-right: 0;
+      margin-right: $nav-last-child-margin-right;
