@@ -1,2 +1,11 @@
+// vars
+$selected-text-decoration     := underline;
+
+// blocks
+selected-block                := {
+  text-decoration             : $selected-text-decoration
+}
+
+// rules
 .s-selected
-  text-decoration: underline;
+  {selected-block}
