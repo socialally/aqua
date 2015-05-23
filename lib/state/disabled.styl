@@ -1,14 +1,19 @@
-s-pointer-disabled-block    := {
+// vars
+$s-disabled-opacity         := .6;
+
+// placeholders
+$s-pointer-disabled
   pointer-events            : none
-}
 
+// blocks
 s-disabled-block            := {
-  opacity                   : .6
+  opacity                   : $s-disabled-opacity
 }
 
+// rules
 .s-pointer-disabled
-  {s-pointer-disabled-block}
+  @extend $s-pointer-disabled
 
 .s-disabled
-  @extend .s-pointer-disabled;
+  @extend $s-pointer-disabled
   {s-disabled-block}
