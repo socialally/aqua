@@ -1,3 +1,11 @@
+// vars
+$kbd-font-family        := $code-font;
+
+// blocks
+kbd-block               := {
+  font-family           : $kbd-font-family
+}
+
+// rules
 kbd
-  font-family: $kbd-ff;
-  /*font-size: $kbd-fs;*/
+  {kbd-block}
