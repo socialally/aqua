@@ -1,37 +1,58 @@
-$c-star-bg = $magenta;
-$c-star-fg = $white;
-$c-star-size = 3rem;
+// vars
+$c-star-bg                        := $magenta;
+$c-star-fg                        := $white;
+$c-star-size                      := 3rem;
 
+// blocks
+star-block                        := {
+  position                        : absolute
+  display                         : inline-block
+  z-index                         : 1
+  right                           : -1.5rem
+  top                             : -1.5rem
+  background                      : $c-star-bg
+  color                           : $c-star-fg
+  width                           : $c-star-size
+  height                          : $c-star-size
+  font-size                       : 1.5rem
+  text-align                      : center
+  padding                         : .3rem 0 0 0
+  user-select                     : none
+}
+
+star-before-after-block           := {
+  content                         : ''
+  position                        : absolute
+  top                             : 0
+  left                            : 0
+  height                          : 3rem
+  width                           : 3rem
+  background                      : $c-star-bg
+  z-index                         : -1
+}
+
+star-before-block                 := {
+  -webkit-transform               : rotate(30deg)
+  -moz-transform                  : rotate(30deg)
+  -ms-transform                   : rotate(30deg)
+  -o-transform                    : rotate(30deg)
+  transform                       : rotate(30deg)
+}
+
+star-after-block                  := {
+  -webkit-transform               : rotate(60deg)
+  -moz-transform                  : rotate(60deg)
+  -ms-transform                   : rotate(60deg)
+  -o-transform                    : rotate(60deg)
+  transform                       : rotate(60deg)
+}
+
+// rules
 .c-star
-  position: absolute;
-  display: inline-block;
-  z-index: 1;
-  right: -1.5rem;
-  top: -1.5rem;
-  background: $c-star-bg;
-  color: $c-star-fg;
-  width: $c-star-size;
-  height: $c-star-size;
-  font-size: 1.5rem;
-  text-align: center;
-  padding-top: .3rem;
-  user-select: none;
+  {star-block}
   &:before, &:after
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 3rem;
-    width: 3rem;
-    background: $c-star-bg;
-    z-index: -1;
+    {star-before-after-block}
   &:before
-    -webkit-transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    -o-transform: rotate(30deg);
+    {star-before-block}
   &:after
-    -webkit-transform: rotate(60deg);
-    -moz-transform: rotate(60deg);
-    -ms-transform: rotate(60deg);
-    -o-transform: rotate(60deg);
+    {star-after-block}
