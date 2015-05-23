@@ -1,12 +1,27 @@
+// vars
+$code-ff                    := $code-font;
+$code-lh                    := 1.2;
+$code-bg-color              := $base02;
+$code-fg-color              := $magenta;
+$code-padding               := 2px;
+$code-br                    := 3px;
+
+// blocks
+code-block                  := {
+  font-family               : $code-ff
+  line-height               : $code-lh
+}
+
+inline-code-block           := {
+  background                : $code-bg-color
+  color                     : $code-fg-color
+  padding                   : $code-padding
+  border-radius             : $code-br
+}
+
+// rules
 code
-  font-family: $code-ff;
-  line-height: $code-lh;
   {code-block}
 
 :not(pre) > code
-  /*font-size: $code-fs;*/
-  background: $code-bg-color;
-  color: $code-fg-color;
-  padding: $code-padding;
-  border-radius: $code-br;
   {inline-code-block}
