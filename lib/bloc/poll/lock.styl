@@ -1,7 +1,7 @@
-// NOTE: position: absolute in blocks is failing :(
+// vars
 
+// blocks
 b-poll-lock-block                   := {
-  // position                          : absolute
   left                              : 0
   top                               : 0
   pointer-events                    : none
@@ -12,7 +12,6 @@ b-poll-lock-block                   := {
 }
 
 b-poll-padlock-block                := {
-  // position                          : absolute
   top                               : 0
   right                             : 0
   display                           : inline-block
@@ -24,9 +23,12 @@ b-poll-padlock-block                := {
   background-position               : center center
 }
 
+// rules
 .b-poll-lock
+  // NOTE: must be declared here due to stylus bug w/ position declaration
   position                            : absolute;
   {b-poll-lock-block}
   .padlock
+    // NOTE: must be declared here due to stylus bug w/ position declaration
     position                          : absolute;
     {b-poll-padlock-block}
