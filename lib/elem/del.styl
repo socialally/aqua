@@ -1,3 +1,11 @@
+// vars
+$del-td                 := line-through;
+
+// blocks
+del-block               := {
+  text-decoration       : $del-td
+}
+
+// rules
 del
-  text-decoration: $del-td;
   {del-block}
