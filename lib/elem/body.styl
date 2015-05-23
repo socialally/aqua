@@ -1,7 +1,20 @@
+// vars
+$body-bg-color          := $base03;
+$body-fg-color          := $normal-color;
+$body-ff                := sans-serif;
+// currently ems cause chrome bug misinterpreting rems on body element
+$body-fs                := 1.5em;
+$body-lh                := 1.6;
+
+// blocks
+body-block              := {
+  font-family           : $body-ff
+  background            : $body-bg-color
+  color                 : $body-fg-color
+  font-size             : $body-fs
+  line-height           : $body-lh
+}
+
+// rules
 body
-  font-family: $body-ff;
-  background: $body-bg-color;
-  color: $body-fg-color;
-  font-size: $body-fs;
-  line-height: $body-lh;
   {body-block}
