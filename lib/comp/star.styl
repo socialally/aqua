@@ -39,9 +39,11 @@ star-after-block                  := {
 
 // rules
 .c-star
+  // NOTE: must be declared here due to stylus bug with position: absolute
   position                        : absolute
   {star-block}
   &:before, &:after
+    // NOTE: must be declared here due to stylus bug with position: absolute
     position                      : absolute
     {star-before-after-block}
   &:before
