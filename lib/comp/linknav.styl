@@ -1,6 +1,6 @@
 // vars
 $c-linknav-display              := inline-block;
-$c-linknav-item-margin         := 0 1rem 0 0;
+$c-linknav-item-margin          := 0 1rem 0 0;
 
 // blocks
 c-linknav-block                 := {
@@ -17,5 +17,5 @@ c-linknav-item-block           := {
 .c-linknav > *
 // @stylint on
   {c-linknav-block}
-  &:not(:last-item)
+  &:not(:last-child)
     {c-linknav-item-block}
