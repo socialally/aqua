@@ -40,6 +40,7 @@
         "inc": [
           "introduction.md",
           "install.md",
+          "guide.md",
           "developer.md",
           "license.md"
         ]

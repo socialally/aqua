@@ -3,6 +3,7 @@ Table of Contents
 
 * [Aqua](#aqua)
   * [Install](#install)
+  * [Guide](#guide)
   * [Developer](#developer)
     * [Css](#css)
     * [Clean](#clean)
@@ -19,6 +20,8 @@ Stylus stylesheet library.
 ```
 npm i aqua-css
 ```
+
+## Guide
 
 ## Developer
 
