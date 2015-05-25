@@ -1,18 +1,18 @@
 // vars
-$b-size                         := 3rem;
-$b-percent-width                := 12%;
-$b-space                        := .5rem;
-$b-poll-bg                      := $base02;
-$b-poll-fg                      := $base3;
-$b-poll-padding                 := 1rem;
+$b-size                                     := 3rem;
+$b-percent-width                            := 12%;
+$b-space                                    := .5rem;
+$b-poll-bg                                  := $base02;
+$b-poll-fg                                  := $base3;
+$b-poll-padding                             := 1rem;
 
 // placeholders
 $poll {
-  position                      : relative;
-  padding                       : $b-poll-padding;
-  background                    : $b-poll-bg;
-  color                         : $b-poll-fg;
-  margin-bottom                 : 2rem;
+  position                                  : relative;
+  padding                                   : $b-poll-padding;
+  background                                : $b-poll-bg;
+  color                                     : $b-poll-fg;
+  margin-bottom                             : 2rem;
 }
 
 // blocks
@@ -21,72 +21,72 @@ $poll {
 .b-poll
   @extend $poll
   .b-opt
-    cursor: pointer;
-    user-select: none;
+    cursor                                  : pointer;
+    user-select                             : none;
   .b-option
-    background: $base03;
-    &:hover
+    background                              : $base03;
+    &                                       : hover
     &.s-selected
-      background: lighten($blue, 60%);
+      background                            : lighten($blue, 60%);
 
 .b-poll-summary
   @extend $poll
 
 .c-index
-  position: relative;
-  display: inline-block;
-  background: $green;
-  color: $b-poll-fg;
-  line-height: $b-size;
-  text-align: center;
-  width: 8%;
+  position                                  : relative;
+  display                                   : inline-block;
+  background                                : $green;
+  color                                     : $b-poll-fg;
+  line-height                               : $b-size;
+  text-align                                : center;
+  width                                     : 8%;
 
 .c-index + .b-option
-  display: inline-block;
-  width: 92%;
+  display                                   : inline-block;
+  width                                     : 92%;
 
 .b-option
-  position: relative;
-  padding: .2rem;
-  text-shadow: $base02 1px 1px;
+  position                                  : relative;
+  padding                                   : .2rem;
+  text-shadow                               : $base02 1px 1px;
 
 .b-opt
-  position: relative;
-  line-height: $b-size;
-  display: block;
+  position                                  : relative;
+  line-height                               : $b-size;
+  display                                   : block;
   .c-bg
-    position: absolute;
-    display: block;
-    background: darken($blue, 40%);
-    min-height: $b-size;
-    width: 100%;
+    position                                : absolute;
+    display                                 : block;
+    background                              : darken($blue, 40%);
+    min-height                              : $b-size;
+    width                                   : 100%;
   .c-progress
-    position: absolute;
-    background: $blue;
-    line-height: $b-size;
-    left: $b-percent-width;
-    width: 0;
+    position                                : absolute;
+    background                              : $blue;
+    line-height                             : $b-size;
+    left                                    : $b-percent-width;
+    width                                   : 0;
   .c-lbl
-    position: relative;
-    top: .2rem;
-    padding: .5rem;
-    left: $b-percent-width;
+    position                                : relative;
+    top                                     : .2rem;
+    padding                                 : .5rem;
+    left                                    : $b-percent-width;
   .c-percent
-    position: absolute;
-    background: $violet;
-    text-align: center;
-    width: $b-percent-width;
-    font-size: 1.3rem;
+    position                                : absolute;
+    background                              : $violet;
+    text-align                              : center;
+    width                                   : $b-percent-width;
+    font-size                               : 1.3rem;
   .c-percent[hidden] + .c-progress,
   .c-percent[hidden] + .c-progress + .c-lbl
-    left: 0;
+    left                                    : 0;
 
-.b-option:not(:last-child)
-  margin: 0 0 1rem 0;
+.b-option                                   : not(:last-child)
+  margin                                    : 0 0 1rem 0;
 
 .right
   .c-progress
   .c-lbl
-    left: 0;
+    left                                    : 0;
   .c-percent
-    right: 0;
+    right                                   : 0;
