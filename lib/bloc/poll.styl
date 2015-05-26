@@ -1,6 +1,7 @@
 // vars
 $b-size                                     := 3rem;
 $b-percent-width                            := 12%;
+$b-horizontal-width                         := 20%;
 $b-space                                    := .5rem;
 $b-poll-bg                                  := $base02;
 $b-poll-fg                                  := $base3;
@@ -36,6 +37,13 @@ $poll {
     .b-option
       display                               : inline-block;
       width                                 : 30%;
+      .b-opt
+        .c-percent
+          width                             : $b-horizontal-width;
+        .c-progress
+          left                              : $b-horizontal-width;
+        .c-lbl
+          left                              : $b-horizontal-width;
       &:not(:last-child)
         margin                              : 0 5% 0 0;
 
