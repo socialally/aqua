@@ -25,9 +25,19 @@ $poll {
     user-select                             : none;
   .b-option
     background                              : $base03;
-    &                                       : hover
+    &:hover
     &.s-selected
       background                            : lighten($blue, 60%);
+  .b-option:not(:last-child)
+    margin                                  : 0 0 1rem 0;
+
+  // horizontal modifier rules
+  &.m-horizontal
+    .b-option
+      display                               : inline-block;
+      width                                 : 30%;
+      &:not(:last-child)
+        margin                              : 0 5% 0 0;
 
 .b-poll-summary
   @extend $poll
@@ -80,9 +90,6 @@ $poll {
   .c-percent[hidden] + .c-progress,
   .c-percent[hidden] + .c-progress + .c-lbl
     left                                    : 0;
-
-.b-option:not(:last-child)
-  margin                                    : 0 0 1rem 0;
 
 .right
   .c-progress
