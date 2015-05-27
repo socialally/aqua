@@ -6,6 +6,13 @@ mock-video                            := {
   height                              : 250px
 }
 
+mock-mini-image                       := {
+  background                          : $base02
+  background-image                    : url('../img/pattern.png')
+  width                               : 75px
+  height                              : 75px
+}
+
 mock-small-image                      := {
   background                          : $base02
   background-image                    : url('../img/pattern.png')
@@ -13,9 +20,20 @@ mock-small-image                      := {
   height                              : 150px
 }
 
+
 // rules
 .mock.video
   {mock-video}
 
-.mock.small
+.mock.image.mini
+  {mock-mini-image}
+
+.mock.image.small
   {mock-small-image}
+
+div + p.mock
+  padding-left: 15px;
+
+.content-row
+  .mock.image
+    margin: 0 15px 0 0;
