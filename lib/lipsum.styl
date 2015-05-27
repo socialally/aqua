@@ -1,0 +1,43 @@
+// vars
+$p1-content                   := 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at dolor in sem rhoncus rutrum a nec diam. Etiam et tempor erat. Etiam id aliquet magna. Phasellus eu euismod erat, vel accumsan sapien. In leo quam, ornare quis aliquet eu, maximus vitae arcu. Morbi vel pellentesque mi. Morbi efficitur fermentum libero ac convallis.';
+$p2-content                   := 'Praesent euismod tellus id porttitor scelerisque. Maecenas porttitor ante non ipsum pharetra condimentum. In facilisis sapien interdum vehicula vulputate. In lacinia commodo mauris vel tempor. Duis in ullamcorper arcu, ut condimentum sapien. Mauris malesuada et nunc nec efficitur. Phasellus molestie sem eros, ut finibus orci hendrerit ultricies. Donec pulvinar, elit vel ultrices ultricies, nulla libero vehicula arcu, quis sagittis nulla magna nec tortor.';
+$p3-content                   := 'Morbi semper convallis nisl, sed laoreet ligula mattis sit amet. In rhoncus odio at ultrices egestas. Vestibulum tempus lorem vitae urna accumsan facilisis. Nullam lectus erat, rutrum id sagittis non, semper quis libero. Nulla arcu urna, tempor nec posuere quis, fringilla eleifend urna. Fusce congue varius enim, ut luctus odio consectetur id. Phasellus dolor elit, venenatis ut auctor quis, ornare sit amet purus. Integer eu malesuada urna. Suspendisse in porta turpis. Curabitur blandit mi erat, sit amet fringilla elit mattis scelerisque. Quisque diam lectus, tincidunt at purus id, eleifend eleifend nulla. Aliquam rutrum elit id posuere rutrum. Maecenas quis tellus lectus. Mauris suscipit diam sit amet lacus posuere, vel iaculis nulla convallis. Proin sed sapien blandit, sagittis sem at, sodales odio. Integer convallis lectus turpis, ac venenatis sem tempus eget.';
+$p4-content                   := 'Sed at risus at lectus scelerisque varius at sit amet mi. Duis commodo neque vel sollicitudin eleifend. Nam vitae dolor gravida, varius lacus at, egestas risus. Cras maximus venenatis egestas. Aliquam arcu odio, dapibus pretium elit at, pharetra molestie metus. Aliquam erat volutpat. Pellentesque non interdum nulla, quis posuere metus.';
+$p5-content                   := 'Mauris facilisis sagittis felis, vitae gravida purus dignissim condimentum. Vivamus aliquet sem pulvinar quam sagittis rhoncus. Nulla eleifend tellus ut ipsum iaculis efficitur. Vivamus vulputate sit amet dolor eu hendrerit. Integer venenatis lacus ac dolor aliquet tempus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sed nisi consequat, accumsan ligula sit amet, interdum mauris. Nullam eget placerat erat. Vestibulum elementum, ipsum tempor ornare commodo, felis libero bibendum nibh, faucibus ultrices elit lectus nec ante. Donec vel efficitur lorem, nec egestas sem. Suspendisse non lectus eu lacus blandit vehicula. Maecenas mollis lacus sed elit elementum, non semper lorem faucibus. Sed gravida non quam ut finibus.';
+
+// blocks
+p1                            := {
+  content                     : $p1-content
+}
+
+p2                            := {
+  content                     : $p2-content
+}
+
+p3                            := {
+  content                     : $p3-content
+}
+
+p4                            := {
+  content                     : $p4-content
+}
+
+p5                            := {
+  content                     : $p5-content
+}
+
+// rules
+.lipsum-p1:before
+  {p1}
+
+.lipsum-p2:before
+  {p2}
+
+.lipsum-p3:before
+  {p3}
+
+.lipsum-p4:before
+  {p4}
+
+.lipsum-p5:before
+  {p5}
