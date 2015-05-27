@@ -1,4 +1,11 @@
 // blocks
+mock-video                            := {
+  background                          : $base02
+  background-image                    : url('../img/pattern.png')
+  width                               : 100%
+  height                              : 250px
+}
+
 mock-small-image                      := {
   background                          : $base02
   background-image                    : url('../img/pattern.png')
@@ -7,5 +14,8 @@ mock-small-image                      := {
 }
 
 // rules
+.mock.video
+  {mock-video}
+
 .mock.small
   {mock-small-image}
