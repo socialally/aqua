@@ -1,0 +1,33 @@
+// vars
+
+// blocks
+b-content-lock-block       := {
+  left                     : 0
+  top                      : 0
+  width                    : 100%
+  height                   : 100%
+  padding                  : 1rem
+  background               : rgba(0, 0, 0, .5)
+}
+
+b-content-padlock-block    := {
+  bottom                   : 0
+  right                    : 0
+  display                  : inline-block
+  background               : $black
+  width                    : 32px
+  height                   : 32px
+  background-image         : url('../img/padlock.png')
+  background-repeat        : no-repeat
+  background-position      : center center
+}
+
+// rules
+.b-content-lock
+  // NOTE: must be declared here due to stylus bug w/ position declaration
+  position                 : absolute;
+  {b-content-lock-block}
+  .padlock
+    // NOTE: must be declared here due to stylus bug w/ position declaration
+    position               : absolute;
+    {b-content-padlock-block}
