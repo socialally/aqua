@@ -11,6 +11,7 @@ mock-mini-image                       := {
   background-image                    : url('../img/pattern.png')
   width                               : 75px
   height                              : 75px
+  vertical-align                      : top
 }
 
 mock-small-image                      := {
@@ -35,9 +36,10 @@ mock-small-image                      := {
   display: table;
   border-collapse: collapse;
   border-spacing: 0;
-  table-layout:fixed;
   width: 100%;
   padding: 0;
+  &.m-fixed
+    table-layout:fixed;
   .group
     display: table-row-group;
   .row
