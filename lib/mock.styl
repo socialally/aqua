@@ -31,9 +31,41 @@ mock-small-image                      := {
 .mock.image.small
   {mock-small-image}
 
-div + p.mock
-  padding-left: 15px;
+.journey
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout:fixed;
+  width: 100%;
+  padding: 0;
+  .group
+    display: table-row-group;
+  .row
+    display: table-row;
+    border-spacing: 10px;
+    border-collapse: separate;
+  .cell
+    display: table-cell;
+    vertical-align: top;
+    margin: 0;
+    &:not(:last-child)
+      padding-right: 15px;
 
-.content-row
-  .mock.image
-    margin: 0 15px 0 0;
+// content row
+//.content-row
+  //display: table-row;
+  //> *
+    //display: table-cell;
+  //&.m-stretch
+    //> *
+      //column-span: all;
+  //&.m-split
+    //> *
+      //display: table-cell;
+
+
+//div + p.mock
+  //padding-left: 15px;
+
+.mock.image
+  margin: 0 15px 0 0;
