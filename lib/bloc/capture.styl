@@ -1,12 +1,42 @@
 .b-capture
   padding: 1rem;
   background: $base02;
+  font-size: 1.6rem;
+  fieldset
+    padding: 0;
+    border: 0;
+  fieldset:not(:last-child)
+    margin: 0 0 1rem 0;
+  fieldset:last-child
+    margin: 2rem 0 0 0;
+  label.err
+    background: $red;
+    padding-left: .5rem;
+    font-size: 1.3rem;
   label
   input
     display: block;
+    position: relative;
     width: 100%;
-  >fieldset
-    padding: 0;
-    border: 0;
-    margin-bottom: 1rem;
+  input[type='text']
+  input[type='email']
+    background: $base2;
+    color: $base03;
+    +placeholder()
+      color: $base01;
+  label .c-required
+    display: inline-block;
+    color: $red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    line-height: 3rem;
+  label
+    color: $base3;
 
+.b-capture-confirm
+  padding: 1rem;
+  background: $base02;
+  font-size: 1.6rem;
+  min-height: 215px;
