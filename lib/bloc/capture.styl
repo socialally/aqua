@@ -25,6 +25,7 @@ $err := rgba(red($red), green($red), blue($red), .8);
   fieldset
     padding: 0;
     border: 0;
+    position: relative;
   fieldset:not(:last-child)
     margin: 0 0 1rem 0;
   fieldset:last-child
@@ -58,17 +59,6 @@ $err := rgba(red($red), green($red), blue($red), .8);
     color: $base03;
     +placeholder()
       color: $base01;
-  .c-required
-    display: inline-block;
-    color: $red;
-    font-size: 3rem;
-    line-height: 3rem;
-    &:after
-      content: '*';
-  label .c-required
-    position: absolute;
-    top: 0;
-    right: 0;
   label
     color: $base3;
   textarea
@@ -78,6 +68,36 @@ $err := rgba(red($red), green($red), blue($red), .8);
     width: 100%;
     +placeholder()
       color: $base01;
+
+  // required asterisk rules
+  .c-required
+    display: inline-block;
+    color: $red;
+    font-size: 3rem;
+    line-height: 3rem;
+    &:after
+      content: '*';
+  label .c-required
+  fieldset > .c-required
+    position: absolute;
+    top: 0;
+    right: 0;
+
+  fieldset > .c-required
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 1rem;
+    margin-top: .8rem;
+
+  // hide overlaid asterisk on focus
+  :focus + .c-required
+    display: none;
+    
+  // overlaid required asterisk
+  //label[hidden] + input[data-required] + .c-required
+  //label[hidden] + input[data-required] + .c-required
+    //margin-left: -100px;
+
   // modifiers
   &.m-colon
     fieldset label[for]:not(.err):after
