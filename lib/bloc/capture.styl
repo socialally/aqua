@@ -58,6 +58,12 @@
     background: $base2;
     color: $base03;
     width: 100%;
+    +placeholder()
+      color: $base01;
+  // modifiers
+  &.m-colon
+    fieldset label[for]:not(.err):after
+      content: ':';
 
 .b-capture-confirm
   padding: 1rem;
