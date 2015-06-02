@@ -1,3 +1,7 @@
+// vars
+$err := rgba(red($red), green($red), blue($red), .8);
+
+// rules
 .b-capture
   padding: 1rem;
   background: $base02;
@@ -30,9 +34,16 @@
     margin: 0 1rem 0 0;
 
   label.err
-    background: rgba(red($red), green($red), blue($red), .8);
+    background: $err;
     padding: .5rem .5rem .5rem .5rem;
     font-size: 1.3rem;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  input.err
+  select.err
+  textarea.err
+    border: 1px solid $err;
+
   label
   input
     position: relative;
