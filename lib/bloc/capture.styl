@@ -25,6 +25,9 @@
     margin: 0 0 1rem 0;
   fieldset:last-child
     margin: 2rem 0 0 0;
+  fieldset > input[type='submit']:not(:last-child)
+  fieldset > input[type='reset']:not(:last-child)
+    margin: 0 1rem 0 0;
 
   label.err
     background: $red;
@@ -32,8 +35,10 @@
     font-size: 1.3rem;
   label
   input
-    display: block;
     position: relative;
+  label
+  input:not([type='submit']):not([type='reset'])
+    display: block;
     width: 100%;
   input[type='text']
   input[type='email']
