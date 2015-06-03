@@ -30,9 +30,10 @@ $err := rgba(red($red), green($red), blue($red), .8);
     margin: 0 0 1rem 0;
   fieldset:last-child
     margin: 2rem 0 0 0;
-  fieldset > input[type='submit']:not(:last-child)
-  fieldset > input[type='reset']:not(:last-child)
-    margin: 0 1rem 0 0;
+  fieldset > input[type='submit'],
+  fieldset > input[type='reset']
+    &:not(:last-child)
+      margin: 0 1rem 0 0;
 
   label.err
     background: $err;
@@ -50,9 +51,18 @@ $err := rgba(red($red), green($red), blue($red), .8);
     position: relative;
   label
   select
-  input:not([type='submit']):not([type='reset'])
+  input:not([type='submit']):not([type='reset']):not([type='radio'])
     display: block;
     width: 100%;
+  input[type='radio'] + label[for]:not(.err)
+    width: auto;
+    display: inline-block;
+    font-size: 1.4rem;
+    &:not(:last-child)
+      margin: 0 1.5rem 0 0;
+  label[for]:not(.err) ~ input[type='radio']
+    margin: 0 .5rem 0 0;
+
   input[type='text']
   input[type='email']
     background: $base2;
@@ -94,13 +104,13 @@ $err := rgba(red($red), green($red), blue($red), .8);
     display: none;
     
   // overlaid required asterisk
-  //label[hidden] + input[data-required] + .c-required
-  //label[hidden] + input[data-required] + .c-required
-    //margin-left: -100px;
+  // label[hidden] + input[data-required] + .c-required
+  // label[hidden] + input[data-required] + .c-required
+    // margin-left: -100px;
 
   // modifiers
   &.m-colon
-    fieldset label[for]:not(.err):after
+    fieldset label[for]:not(.err):first-child:after
       content: ':';
 
 .b-capture-confirm
