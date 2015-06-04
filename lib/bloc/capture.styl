@@ -51,10 +51,11 @@ $err := rgba(red($red), green($red), blue($red), .8);
     position: relative;
   label
   select
-  input:not([type='submit']):not([type='reset']):not([type='radio'])
+  input:not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox'])
     display: block;
     width: 100%;
-  input[type='radio'] + label[for]:not(.err)
+  input[type='radio'] + label[for]:not(.err),
+  input[type='checkbox'] + label[for]:not(.err)
     width: auto;
     display: inline-block;
     font-size: 1.4rem;
@@ -62,6 +63,9 @@ $err := rgba(red($red), green($red), blue($red), .8);
       margin: 0 1.5rem 0 0;
   label[for]:not(.err) ~ input[type='radio']
     margin: 0 .5rem 0 0;
+
+  input[type='checkbox'] + label[for]:not(.err)
+    margin: 0 0 0 .5rem;
 
   input[type='text']
   input[type='email']
