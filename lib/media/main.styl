@@ -1,4 +1,15 @@
+template-logo-lge-block := {
+  background            : url('../img/logo.png') transparent no-repeat
+  background-size       : 290px 129px
+  min-width             : 290px
+  min-height            : 129px
+  margin                : 0 0 3rem 0
+}
+
 @media (min-width: 760px)
   main
-    width: auto;
-    min-width: 760px;
+    // NOTE: using a block here break the styles
+    width                 : auto;
+    min-width             : 760px;
+    .logo
+      {template-logo-lge-block}
