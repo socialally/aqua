@@ -84,18 +84,21 @@ $poll {
     background                              : $blue;
     line-height                             : $b-size;
     left                                    : $b-percent-width;
+    top                                     : 0;
     width                                   : 0;
   .c-lbl
     position                                : relative;
-    top                                     : .2rem;
+    top                                     : 0;
     padding                                 : .5rem;
-    left                                    : $b-percent-width;
+    //left                                    : $b-percent-width;
   .c-percent
-    position                                : absolute;
+    position                                : relative;
+    display                                 : inline-block;
     background                              : $violet;
     text-align                              : center;
     width                                   : $b-percent-width;
-    font-size                               : 1.3rem;
+    //height                                  : 100%;
+    //font-size                               : 1.2rem;
   .c-percent[hidden] + .c-progress,
   .c-percent[hidden] + .c-progress + .c-lbl
     left                                    : 0;
