@@ -106,6 +106,10 @@ $err := rgba(red($red), green($red), blue($red), .8);
   // hide overlaid asterisk on focus
   :focus + .c-required
     display: none;
+
+  input[type=checkbox] + label + .c-required
+    margin-right: 0;
+    top: 0 !important;
     
   // overlaid required asterisk
   // label[hidden] + input[data-required] + .c-required
