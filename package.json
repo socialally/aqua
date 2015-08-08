@@ -8,19 +8,16 @@
     "url": "git://github.com/socialally/aqua.git"
   },
   "dependencies": {
-    "kouto-swiss": "~0.11.11"
+    "kouto-swiss": "~0.11.13"
   },
   "devDependencies": {
     "del": "~1.2.0",
-    "gulp": "~3.8.11",
-    "gulp-size": "~1.2.1",
-    "gulp-stylint": "~1.1.2",
-    "gulp-stylus": "~2.0.2",
+    "gulp": "~3.9.0",
+    "gulp-size": "~1.2.3",
+    "gulp-stylint": "~1.1.10",
+    "gulp-stylus": "~2.0.6",
     "require-dir": "~0.3.0"
   },
-  "engine": [
-    "node >= 0.10.11"
-  ],
   "scripts": {
     "clean": "gulp clean",
     "css": "gulp css",
