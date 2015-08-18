@@ -13,6 +13,8 @@ Table of Contents
 Aqua
 ====
 
+> `Stability: unstable`.
+
 Stylus stylesheet library.
 
 ## Install
