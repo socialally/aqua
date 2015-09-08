@@ -1,0 +1,19 @@
+// vars
+
+// blocks
+noscript-block                    := {
+  color                           : $base3
+  background                      : lightness($red, 20%)
+  padding                         : 1rem
+  display                         : block
+  margin-bottom                   : 1rem 
+}
+
+// rules
+noscript
+  {noscript-block}
+
+// hides main element when javascript is disabled
+.noscript
+  main
+    display                       : none;
