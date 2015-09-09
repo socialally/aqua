@@ -21,7 +21,6 @@ mock-small-image                      := {
   height                              : 150px
 }
 
-
 // rules
 .mock.video
   {mock-video}
@@ -36,6 +35,8 @@ mock-small-image                      := {
 
 .mock.image.small
   {mock-small-image}
+  &.inline.u-pl
+    margin: 0 1rem .5rem 0;
 
 .journey
   display: table;
@@ -56,6 +57,10 @@ mock-small-image                      := {
     vertical-align: top;
     position: relative;
     margin: 0;
+    .u-cf
+      &:before
+      &:after
+        display: none;
     &:not(:last-child)
       padding-right: 15px;
 
