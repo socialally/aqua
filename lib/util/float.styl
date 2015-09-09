@@ -14,6 +14,9 @@ u-pr-block            := {
 // rules
 .u-cf
   @extend $clearfix;
+  &:before
+  &:after
+    display: none;
 
 .u-pl
   {u-pl-block}
