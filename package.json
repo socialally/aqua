@@ -1,7 +1,7 @@
 {
   "name": "aqua-css",
   "description": "Stylus stylesheet library",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "stability": "unstable",
   "author": "muji <noop@xpm.io>",
   "repository": {
