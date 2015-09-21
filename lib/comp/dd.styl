@@ -1,9 +1,12 @@
 // blocks
 // .c-dd, .c-dd-toggle, .c-dd-list, .c-dd-item
-dropdown-block          := {}
+dropdown-block          := {
+}
 dropdown-toggle-block   := {}
 dropdown-list-block     := {
-  display               : none
+  max-width             : 280px
+  top                   : 18px
+  left                  : 0
 }
 
 dropdown-item-block     := {
@@ -13,9 +16,12 @@ dropdown-item-block     := {
 // rules
 .c-dd
   {dropdown-block}
+  position                  : relative
   .c-dd-toggle
     {dropdown-toggle-block}
   .c-dd-list
     {dropdown-list-block}
+    // not recognised when in block declaration :(
+    position                : absolute
     .c-dd-item
       {dropdown-item-block}
