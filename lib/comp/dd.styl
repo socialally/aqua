@@ -6,7 +6,7 @@ dropdown-toggle-block   := {}
 dropdown-list-block     := {
   max-width             : 280px
   top                   : 18px
-  left                  : 0
+  right                 : 0
 }
 
 dropdown-item-block     := {
@@ -17,6 +17,7 @@ dropdown-item-block     := {
 .c-dd
   {dropdown-block}
   position                  : relative
+  z-index                   : 1000
   .c-dd-toggle
     {dropdown-toggle-block}
   .c-dd-list
