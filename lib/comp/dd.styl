@@ -1,16 +1,28 @@
 // blocks
 // .c-dd, .c-dd-toggle, .c-dd-list, .c-dd-item
-dropdown-block          := {
+dropdown-block          := {}
+
+dropdown-toggle-block   := {
+  background            : $base3
+  color                 : $base01
+  padding               : .4rem
+  line-height           : normal
+  border-radius         : 2px
 }
-dropdown-toggle-block   := {}
+
 dropdown-list-block     := {
+  background            : $base3
   max-width             : 280px
-  top                   : 18px
+  min-width             : 180px
+  top                   : 2.5rem
   right                 : 0
+  border-radius         : 2px
 }
 
 dropdown-item-block     := {
   display               : block !important
+  color                 : $base02 !important
+  padding-right         : .5rem
 }
 
 // rules
@@ -26,3 +38,5 @@ dropdown-item-block     := {
     position                : absolute
     .c-dd-item
       {dropdown-item-block}
+      &:hover
+        background: $base1;
